@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ImageButton.Abstractions;assembly=ImageButton.Abstractions"
+             x:Class="CalaenderScheduler.CustomControls.scheduler" BackgroundColor="White">
+    <ContentView.Content>
+        <AbsoluteLayout>
+            <StackLayout BackgroundColor="White" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional,XProportional,YProportional">
+                <Grid RowSpacing="0" ColumnSpacing="0" Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <local:ImageButton x:Name="button_year_left" Source="left.png" Grid.Column="0" Grid.Row="0" HeightRequest="35" WidthRequest="35"/>
+                    <local:ImageButton x:Name="button_year_right" Source="right.png" Grid.Column="2" Grid.Row="0" HeightRequest="35" WidthRequest="35"/>
+                    <Label x:Name="lblYear" Text="July, 2018" Grid.Row="0" Grid.Column="1" TextColor="Black" YAlign="Center" BackgroundColor="Gray" XAlign="Center" HeightRequest="35"/>
+
+                    <local:ImageButton x:Name="button_month_left" Source="left.png" Grid.Column="0" Grid.Row="2" Margin="0,0,0,0" HeightRequest="35" WidthRequest="35"/>
+                    <local:ImageButton x:Name="button_month_right" Source="right.png" Grid.Column="2" Grid.Row="2" Margin="0,0,0,0" HeightRequest="35" WidthRequest="35"/>
+                    <Label x:Name="lblmonth" Text="July" Grid.Row="2" Grid.Column="1" TextColor="Black" YAlign="Center" BackgroundColor="Gray" XAlign="Center" HeightRequest="35"/>
+                    <Grid RowSpacing="0" ColumnSpacing="0" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,1,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label x:Name="lblSun" Text="Sun" Grid.Column="0" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblMon" Text="Mon" Grid.Column="1" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblTue" Text="Tue" Grid.Column="2" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblWed" Text="Wed" Grid.Column="3" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblThu" Text="Thu" Grid.Column="4" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblFri" Text="Fri" Grid.Column="5" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,0,1"/>
+                        <Label x:Name="lblSat" Text="Sat" Grid.Column="6" XAlign="Center" YAlign="Center" TextColor="Black" BackgroundColor="White" Margin="1,0,1,1"/>
+                        <Grid x:Name="grdCalender" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="7"></Grid>
+                    </Grid>
+                    <StackLayout Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <BoxView BackgroundColor="LightGray" HeightRequest="0.2" HorizontalOptions="FillAndExpand"/>
+                        <ListView x:Name="lstactivities" SeparatorVisibility="Default" RowHeight="66">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid RowSpacing="0" ColumnSpacing="0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Margin="8" HorizontalOptions="StartAndExpand" Source="hourglass.png" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" WidthRequest="40" HeightRequest="40"/>
+                                            <Label Margin="8" FontSize="15" Grid.Column="1" Grid.Row="0" TextColor="Black" FontAttributes="Bold" LineBreakMode="TailTruncation" Text="{Binding activityHeading}"/>
+                                            <Label Margin="0,8,8,8" HorizontalOptions="EndAndExpand" Grid.Column="2" Grid.Row="0" LineBreakMode="TailTruncation" FormattedText="{Binding FormattedDateString}"/>
+                                            <Label Margin="8,0,0,0" FontSize="15" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" TextColor="Gray" LineBreakMode="TailTruncation" Text="{Binding activityDescription}"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Grid>
+
+            </StackLayout>
+            <local:ImageButton x:Name="FabbuttonAddActivities" Margin="0,0,5,5" Source="FB.png" AbsoluteLayout.LayoutBounds="1,1,0.15,0.09" AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional,XProportional,YProportional" VerticalOptions="End"/>
+            <ContentView x:Name="overlay" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#C0808080" IsVisible="False">
+                <ScrollView>
+                    <Grid x:Name="grdOverlay" Margin="15,0" BackgroundColor="White" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="1"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Schedule your activities" TextColor="Black" FontAttributes="Bold" Grid.Column="0" Grid.Row="0" FontSize="16" Margin="8"/>
+                        <local:ImageButton Grid.Column="1" Grid.Row="0" Source="cross" WidthRequest="25" HeightRequest="25" HorizontalOptions="End" x:Name="closeoverlay" Margin="0,0,10,0"/>
+                        <BoxView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" BackgroundColor="LightGray" Margin="8,0"/>
+                        <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" x:Name="overlaystack" Margin="10">
+                            <Label Text="Activity Date" TextColor="Black" FontSize="16"/>
+                            <DatePicker x:Name="lblSelectedDate" FontSize="16"/>
+                            <Label Text="Activity Title" TextColor="Black" FontSize="16"/>
+                            <Entry x:Name="entryactivitytitle" Placeholder="Enter Title" FontSize="16"/>
+                            <Label Text="Activity Description" TextColor="Black" FontSize="16"/>
+                            <Editor HeightRequest="80" x:Name="editorActivities" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <Button Text="Submit" x:Name="btnsubmitactivities" CornerRadius="8" TextColor="White" BackgroundColor="#0082ff" WidthRequest="80"/>
+                                <Button Text="Cancel" x:Name="btncancelactivities" CornerRadius="8" TextColor="White" BackgroundColor="Red" WidthRequest="80"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+            </ContentView>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

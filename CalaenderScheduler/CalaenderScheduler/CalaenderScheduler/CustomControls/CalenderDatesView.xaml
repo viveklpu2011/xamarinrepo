@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="CalaenderScheduler.CustomControls.CalenderDatesView">
+    <ContentView.Content>
+        <Frame x:Name="frmDate" Padding="0" BackgroundColor="Gray" CornerRadius="20">
+            <Grid x:Name="gridDate" RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="lblDate" Text="1" TextColor="Black" HorizontalOptions="Center" Margin="0,5,0,2"/>
+                <Frame Margin="0" x:Name="dtFrame" BackgroundColor="Green" CornerRadius="20" Grid.Row="1" VerticalOptions="EndAndExpand" HorizontalOptions="Start" Padding="8,4">
+                    <Label x:Name="lblActivitiesCount" Text="3" TextColor="White" FontSize="Micro"/>
+                </Frame>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
