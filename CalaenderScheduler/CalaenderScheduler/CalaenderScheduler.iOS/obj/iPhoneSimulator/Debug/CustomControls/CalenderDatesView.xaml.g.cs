@@ -13,8 +13,8 @@
 namespace CalaenderScheduler.CustomControls {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Projects_beesolver\\CalaenderScheduler\\CalaenderScheduler\\CalaenderScheduler\\Cu" +
-        "stomControls\\CalenderDatesView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Github\\CalaenderScheduler\\CalaenderScheduler\\CalaenderScheduler\\CustomControls" +
+        "\\CalenderDatesView.xaml")]
     public partial class CalenderDatesView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

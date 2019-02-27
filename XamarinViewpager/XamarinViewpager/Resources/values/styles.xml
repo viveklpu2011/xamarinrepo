@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
+  </style>
+
+  <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+    <item name="android:colorPrimary">#5A8622</item>
+    <item name="android:statusBarColor">#01a0e2</item>
+  </style>
+
+ <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabTextColor">#707070</item>
+    <item name="tabSelectedTextColor">#00A859</item>   
+    <item name="tabIndicatorColor">#ffffff</item>
+    <item name="android:textStyle">bold</item>
+    <item name="tabTextAppearance">@style/TextAppearance.AppCompat.Subhead.Inverse</item>
+     </style>
+</resources>

@@ -13,8 +13,7 @@
 namespace CalaenderScheduler {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Projects_beesolver\\CalaenderScheduler\\CalaenderScheduler\\CalaenderScheduler\\Ma" +
-        "inPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Github\\CalaenderScheduler\\CalaenderScheduler\\CalaenderScheduler\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

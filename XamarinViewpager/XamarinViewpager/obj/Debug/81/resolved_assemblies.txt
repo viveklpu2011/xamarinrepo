@@ -1,0 +1,16 @@
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\XamarinViewpager.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Java.Interop.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Mono.Android.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\mscorlib.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.Core.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.Xml.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.Xml.Linq.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Xamarin.Android.Support.Design.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Xamarin.Android.Support.v4.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.Net.Http.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
+C:\Users\vnigam\Downloads\XamarinViewpager\XamarinViewpager\XamarinViewpager\obj\Debug\81\android\assets\Mono.Security.dll
